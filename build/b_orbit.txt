@@ -42,7 +42,7 @@ function Initialize-Orbit {
     $slash.Data = [System.Windows.Media.Geometry]::Parse('M 176,44 L 196,60 L 64,200 L 44,184 Z')
     $slash.Fill = New-LinBrush -colors @('#FF2A2A33', '#FF101014') -offsets @(0, 1)
     $slash.IsHitTestVisible = $false
-    [void]$OrbitLayer.Children.Add($slash)
+    [void]$BlossomLayer.Children.Add($slash)
 }
 Initialize-Orbit {
     $i = 0
