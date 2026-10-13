@@ -200,9 +200,9 @@ $xaml = @'
       <Path x:Name="Body" Data="{BODY}" IsHitTestVisible="True">
         <Path.Fill>
           <RadialGradientBrush MappingMode="Absolute" Center="120,92" GradientOrigin="120,92" RadiusX="152" RadiusY="152">
-            <GradientStop Color="#FF55555F" Offset="0"/>
-            <GradientStop Color="#FF232329" Offset="0.45"/>
-            <GradientStop Color="#FF0E0E11" Offset="1"/>
+            <GradientStop Color="#FFF5F5F8" Offset="0"/>
+            <GradientStop Color="#FFECECF1" Offset="0.45"/>
+            <GradientStop Color="#FFDCDCE4" Offset="1"/>
           </RadialGradientBrush>
         </Path.Fill>
         <Path.Effect>
@@ -231,16 +231,16 @@ $xaml = @'
         <Ellipse Width="24" Height="27" Canvas.Left="92" Canvas.Top="100.5">
           <Ellipse.Fill>
             <LinearGradientBrush StartPoint="0.2,0" EndPoint="0.8,1">
-              <GradientStop Color="#FFE8E8EE" Offset="0"/>
-              <GradientStop Color="#FFF4F4F7" Offset="1"/>
+              <GradientStop Color="#FF1C1C22" Offset="0"/>
+              <GradientStop Color="#FF101014" Offset="1"/>
             </LinearGradientBrush>
           </Ellipse.Fill>
         </Ellipse>
         <Ellipse Width="24" Height="27" Canvas.Left="124" Canvas.Top="100.5">
           <Ellipse.Fill>
             <LinearGradientBrush StartPoint="0.2,0" EndPoint="0.8,1">
-              <GradientStop Color="#FFE8E8EE" Offset="0"/>
-              <GradientStop Color="#FFF4F4F7" Offset="1"/>
+              <GradientStop Color="#FF1C1C22" Offset="0"/>
+              <GradientStop Color="#FF101014" Offset="1"/>
             </LinearGradientBrush>
           </Ellipse.Fill>
         </Ellipse>
@@ -252,13 +252,13 @@ $xaml = @'
 
       <!-- 眼睛(笑成弯月) -->
       <Canvas x:Name="EyeHappy" Width="240" Height="240" Visibility="Collapsed" IsHitTestVisible="False">
-        <Path Data="M -11,3 Q 0,-9 11,3" Stroke="#FFF4F4F7" StrokeThickness="4"
+        <Path Data="M -11,3 Q 0,-9 11,3" Stroke="#FF101014" StrokeThickness="4"
               StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeLineJoin="Round">
           <Path.RenderTransform>
             <TranslateTransform X="104" Y="115"/>
           </Path.RenderTransform>
         </Path>
-        <Path Data="M -11,3 Q 0,-9 11,3" Stroke="#FFF4F4F7" StrokeThickness="4"
+        <Path Data="M -11,3 Q 0,-9 11,3" Stroke="#FF101014" StrokeThickness="4"
               StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeLineJoin="Round">
           <Path.RenderTransform>
             <TranslateTransform X="136" Y="115"/>
@@ -268,19 +268,19 @@ $xaml = @'
 
       <!-- 嘴 -->
       <Canvas x:Name="Mouth" Width="240" Height="240" IsHitTestVisible="False">
-        <Path x:Name="MouthSmile" Data="M -9,0 Q 0,9 9,0" Stroke="#FFF4F4F7" StrokeThickness="3.2"
+        <Path x:Name="MouthSmile" Data="M -9,0 Q 0,9 9,0" Stroke="#FF101014" StrokeThickness="3.2"
               StrokeStartLineCap="Round" StrokeEndLineCap="Round">
           <Path.RenderTransform>
             <TranslateTransform X="120" Y="138"/>
           </Path.RenderTransform>
         </Path>
-        <Path x:Name="MouthFlat" Data="M -7,0 L 7,0" Stroke="#FFF4F4F7" StrokeThickness="3.2"
+        <Path x:Name="MouthFlat" Data="M -7,0 L 7,0" Stroke="#FF101014" StrokeThickness="3.2"
               StrokeStartLineCap="Round" StrokeEndLineCap="Round" Visibility="Collapsed">
           <Path.RenderTransform>
             <TranslateTransform X="120" Y="139"/>
           </Path.RenderTransform>
         </Path>
-        <Ellipse x:Name="MouthOpen" Width="12" Height="14" Canvas.Left="114" Canvas.Top="131" Fill="#FFF4F4F7" Visibility="Collapsed"/>
+        <Ellipse x:Name="MouthOpen" Width="12" Height="14" Canvas.Left="114" Canvas.Top="131" Fill="#FF101014" Visibility="Collapsed"/>
       </Canvas>
 
       <!-- 腮红 -->
@@ -288,7 +288,7 @@ $xaml = @'
         <Ellipse Width="24" Height="12" Canvas.Left="73" Canvas.Top="120">
           <Ellipse.Fill>
             <RadialGradientBrush>
-              <GradientStop Color="#FF7A7A88" Offset="0"/>
+              <GradientStop Color="#FF6A6A78" Offset="0"/>
               <GradientStop Color="#007A7A88" Offset="1"/>
             </RadialGradientBrush>
           </Ellipse.Fill>
@@ -296,7 +296,7 @@ $xaml = @'
         <Ellipse Width="24" Height="12" Canvas.Left="143" Canvas.Top="120">
           <Ellipse.Fill>
             <RadialGradientBrush>
-              <GradientStop Color="#FF7A7A88" Offset="0"/>
+              <GradientStop Color="#FF6A6A78" Offset="0"/>
               <GradientStop Color="#007A7A88" Offset="1"/>
             </RadialGradientBrush>
           </Ellipse.Fill>
@@ -329,7 +329,7 @@ $xaml = @'
     <Border.Effect>
       <DropShadowEffect Color="#4D000000" BlurRadius="10" ShadowDepth="2" Direction="270" Opacity="0.45"/>
     </Border.Effect>
-    <TextBlock x:Name="SayText" FontFamily="Microsoft YaHei UI" FontSize="14" Foreground="#FFDEDEE6" TextWrapping="Wrap"/>
+    <TextBlock x:Name="SayText" FontFamily="Microsoft YaHei UI" FontSize="14" Foreground="#FF26262E" TextWrapping="Wrap"/>
   </Border>
   <Canvas x:Name="OrbitLayer" Width="240" Height="240" IsHitTestVisible="False"/>
   <Canvas x:Name="ParticleLayer" Width="240" Height="240" IsHitTestVisible="False"/>
@@ -369,9 +369,9 @@ function New-MarkBrush {
     $b.Center = New-Object System.Windows.Point(120, 92)
     $b.GradientOrigin = New-Object System.Windows.Point(120, 92)
     $b.RadiusX = 152; $b.RadiusY = 152
-    [void]$b.GradientStops.Add((New-Gs '#FF3C3C45' 0))
-    [void]$b.GradientStops.Add((New-Gs '#FF232329' 0.45))
-    [void]$b.GradientStops.Add((New-Gs '#FF0E0E11' 1))
+    [void]$b.GradientStops.Add((New-Gs '#FFFBFBFD' 0))
+    [void]$b.GradientStops.Add((New-Gs '#FFECECF1' 0.45))
+    [void]$b.GradientStops.Add((New-Gs '#FFDCDCE4' 1))
     return $b
 }
 
@@ -379,7 +379,7 @@ function New-MarkBrush {
 # 局部坐标: (0,0) = 宠物中心; 齿从半径 26 长到 94, 所以转起来是绕中心
 $script:PetalData = 'M -9.5,-26.5 L -9.5,-84.5 A 9.5,9.5 0 0 1 9.5,-84.5 L 9.5,-26.5 A 9.5,9.5 0 0 1 -9.5,-26.5 Z'
 function Initialize-Blossom {
-    for ($i = 0; $i -lt 12; $i++) {
+    for ($i = 0; $i -lt 0; $i++) {
         $p = New-Object System.Windows.Shapes.Path
         $p.Data = [System.Windows.Media.Geometry]::Parse($script:PetalData)
         $p.Fill = New-MarkBrush
@@ -413,7 +413,7 @@ Initialize-Orbit {
     foreach ($phase in @(0.6, 2.7, 4.8)) {
         $p = New-Object System.Windows.Shapes.Path
         $p.Data = [System.Windows.Media.Geometry]::Parse($script:SparkData)
-        $p.Fill = New-LinBrush -colors @('#F2FFFFFF', '#FF4A4A55') -offsets @(0, 1)
+        $p.Fill = New-LinBrush -colors @('#F2FFFFFF', '#FFF0F0F4') -offsets @(0, 1)
         $p.RenderTransformOrigin = New-Object System.Windows.Point(0, 0)
         $rt = New-Object System.Windows.Media.RotateTransform(0)
         $p.RenderTransform = $rt
@@ -443,7 +443,7 @@ function New-Particle {
         'spark' {
             $el = New-Object System.Windows.Shapes.Path
             $el.Data = [System.Windows.Media.Geometry]::Parse($script:SparkData)
-            $el.Fill = New-LinBrush -colors @('#FFFFFFFF', '#FF4A4A55') -offsets @(0, 1)
+            $el.Fill = New-LinBrush -colors @('#FFFFFFFF', '#FFF0F0F4') -offsets @(0, 1)
         }
         'bubble' {
             $el = New-Object System.Windows.Shapes.Path
@@ -456,7 +456,7 @@ function New-Particle {
         'heart' {
             $el = New-Object System.Windows.Shapes.Path
             $el.Data = [System.Windows.Media.Geometry]::Parse($script:HeartData)
-            $el.Fill = New-LinBrush -colors @('#FFB9B9C6', '#FF1B1B1F') -offsets @(0, 1)
+            $el.Fill = New-LinBrush -colors @('#FF9A9AA8', '#FF1B1B1F') -offsets @(0, 1)
         }
         'z' {
             $el = New-Object System.Windows.Controls.TextBlock
@@ -464,7 +464,7 @@ function New-Particle {
             $el.FontFamily = New-Object System.Windows.Media.FontFamily('Segoe UI')
             $el.FontWeight = [System.Windows.FontWeights]::Bold
             $el.FontSize = 17
-            $el.Foreground = New-LinBrush -colors @('#FFFFFFFF', '#FF4A4A55') -offsets @(0, 1)
+            $el.Foreground = New-LinBrush -colors @('#FFFFFFFF', '#FFF0F0F4') -offsets @(0, 1)
         }
     }
     $el.IsHitTestVisible = $false

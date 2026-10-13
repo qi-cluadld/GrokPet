@@ -5,9 +5,9 @@ function New-MarkBrush {
     $b.Center = New-Object System.Windows.Point(120, 92)
     $b.GradientOrigin = New-Object System.Windows.Point(120, 92)
     $b.RadiusX = 152; $b.RadiusY = 152
-    [void]$b.GradientStops.Add((New-Gs '#FF3C3C45' 0))
-    [void]$b.GradientStops.Add((New-Gs '#FF232329' 0.45))
-    [void]$b.GradientStops.Add((New-Gs '#FF0E0E11' 1))
+    [void]$b.GradientStops.Add((New-Gs '#FFFBFBFD' 0))
+    [void]$b.GradientStops.Add((New-Gs '#FFECECF1' 0.45))
+    [void]$b.GradientStops.Add((New-Gs '#FFDCDCE4' 1))
     return $b
 }
 
@@ -15,7 +15,7 @@ function New-MarkBrush {
 # 局部坐标: (0,0) = 宠物中心; 齿从半径 26 长到 94, 所以转起来是绕中心
 $script:PetalData = 'M -9.5,-26.5 L -9.5,-84.5 A 9.5,9.5 0 0 1 9.5,-84.5 L 9.5,-26.5 A 9.5,9.5 0 0 1 -9.5,-26.5 Z'
 function Initialize-Blossom {
-    for ($i = 0; $i -lt 12; $i++) {
+    for ($i = 0; $i -lt 0; $i++) {
         $p = New-Object System.Windows.Shapes.Path
         $p.Data = [System.Windows.Media.Geometry]::Parse($script:PetalData)
         $p.Fill = New-MarkBrush
@@ -49,7 +49,7 @@ Initialize-Orbit {
     foreach ($phase in @(0.6, 2.7, 4.8)) {
         $p = New-Object System.Windows.Shapes.Path
         $p.Data = [System.Windows.Media.Geometry]::Parse($script:SparkData)
-        $p.Fill = New-LinBrush -colors @('#F2FFFFFF', '#FF4A4A55') -offsets @(0, 1)
+        $p.Fill = New-LinBrush -colors @('#F2FFFFFF', '#FFF0F0F4') -offsets @(0, 1)
         $p.RenderTransformOrigin = New-Object System.Windows.Point(0, 0)
         $rt = New-Object System.Windows.Media.RotateTransform(0)
         $p.RenderTransform = $rt

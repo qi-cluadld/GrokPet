@@ -12,7 +12,7 @@ function New-Particle {
         'spark' {
             $el = New-Object System.Windows.Shapes.Path
             $el.Data = [System.Windows.Media.Geometry]::Parse($script:SparkData)
-            $el.Fill = New-LinBrush -colors @('#FFFFFFFF', '#FF4A4A55') -offsets @(0, 1)
+            $el.Fill = New-LinBrush -colors @('#FFFFFFFF', '#FFF0F0F4') -offsets @(0, 1)
         }
         'bubble' {
             $el = New-Object System.Windows.Shapes.Path
@@ -25,7 +25,7 @@ function New-Particle {
         'heart' {
             $el = New-Object System.Windows.Shapes.Path
             $el.Data = [System.Windows.Media.Geometry]::Parse($script:HeartData)
-            $el.Fill = New-LinBrush -colors @('#FFB9B9C6', '#FF1B1B1F') -offsets @(0, 1)
+            $el.Fill = New-LinBrush -colors @('#FF9A9AA8', '#FF1B1B1F') -offsets @(0, 1)
         }
         'z' {
             $el = New-Object System.Windows.Controls.TextBlock
@@ -33,7 +33,7 @@ function New-Particle {
             $el.FontFamily = New-Object System.Windows.Media.FontFamily('Segoe UI')
             $el.FontWeight = [System.Windows.FontWeights]::Bold
             $el.FontSize = 17
-            $el.Foreground = New-LinBrush -colors @('#FFFFFFFF', '#FF4A4A55') -offsets @(0, 1)
+            $el.Foreground = New-LinBrush -colors @('#FFFFFFFF', '#FFF0F0F4') -offsets @(0, 1)
         }
     }
     $el.IsHitTestVisible = $false
